@@ -11,10 +11,35 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        @php
+            use Carbon\Carbon;
+            $ahora = Carbon::now()->toTimeString();
+
+            if ($ahora >= '03:00:01' && $ahora < '05:00:00') {
+                $fondo = '3-5.png';
+            } elseif ($ahora >= '05:00:01' && $ahora < '07:00:00') {
+                $fondo = '5-7.png';
+            } elseif ($ahora >= '07:00:01' && $ahora < '15:00:00') {
+                $fondo = '7-15.png';
+            } elseif ($ahora >= '15:00:01' && $ahora < '20:00:00') {
+                $fondo = '15-20.png';
+            } elseif ($ahora >= '20:00:01' && $ahora < '21:00:00') {
+                $fondo = '20-21.png';
+            } elseif ($ahora >= '21:00:01' && $ahora < '23:00:00') {
+                $fondo = '21-23.png';
+            } elseif ($ahora >= '23:00:01' && $ahora < '03:00:00') {
+                $fondo = '23-03.png';
+            }
+        @endphp
+
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
+            body {
+                background: url('img/20-21.png') no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -69,7 +94,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    catalejo.fun
+                    <img src="{{ url('img/logo_catalejo.png') }}" alt="Catalejo.fun" width="350">
                 </div>
 
             </div>
