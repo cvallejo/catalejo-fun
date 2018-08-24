@@ -10,6 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <!-- Styles -->
         @php
             use Carbon\Carbon;
@@ -70,8 +71,8 @@
             }
 
             .links > a {
-                color: #636b6f;
-                padding: 0 25px;
+                color: #ffffff;
+                padding: 0 10px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
@@ -91,7 +92,10 @@
                 <div class="title m-b-md">
                     <img src="{{ url('img/catalejo_logo.png') }}" alt="Catalejo.fun" width="350">
                 </div>
-
+                <div class="links">
+                    <i class="far fa-envelope-open"></i>
+                    <a href="mailto:hola@catalejo.fun">hola@catalejo.fun</a>
+                </div>
             </div>
         </div>
     </body>
