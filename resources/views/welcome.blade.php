@@ -89,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="{{ url('img/logo_catalejo.png') }}" alt="Catalejo.fun" width="350">
+                    <img src="{{ url('img/catalejo_logo.png') }}" alt="Catalejo.fun" width="350">
                 </div>
 
             </div>
