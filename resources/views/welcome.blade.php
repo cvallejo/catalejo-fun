@@ -20,7 +20,7 @@
             } elseif ($ahora >= '05:00:01' && $ahora < '07:00:00') {
                 $fondo = '5-7.png';
             } elseif ($ahora >= '07:00:01' && $ahora < '15:00:00') {
-                $fondo = '7-15.png';
+                $fondo = '07-15.png';
             } elseif ($ahora >= '15:00:01' && $ahora < '20:00:00') {
                 $fondo = '15-20.png';
             } elseif ($ahora >= '20:00:01' && $ahora < '21:00:00') {
@@ -33,12 +33,7 @@
         @endphp
 
         <style>
-            body {
-                background: url('img/20-21.png') no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
+            html, body {
                 color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -89,7 +84,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background: url('img/{{ $fondo }}') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
         <div class="flex-center position-ref full-height">
 
             <div class="content">
