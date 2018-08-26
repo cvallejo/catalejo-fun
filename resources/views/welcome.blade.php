@@ -14,7 +14,8 @@
         <!-- Styles -->
         @php
             use Carbon\Carbon;
-            $ahora = Carbon::now()->toTimeString();
+            $ahora = Carbon::now('America/Santiago')->toTimeString();
+            $fondo = '23-03.png';
 
             if ($ahora >= '03:00:01' && $ahora < '05:00:00') {
                 $fondo = '3-5.png';
